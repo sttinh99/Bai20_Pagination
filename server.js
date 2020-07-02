@@ -51,7 +51,7 @@ app.use("/books",/*cookieCount.cookies,*/authMiddleWare.requireAuth,getPermissio
 app.use("/users",/*cookieCount.cookies,*/authMiddleWare.requireAuth,getPermission.getPer,useRoute1);
 app.use("/transactions",/*cookieCount.cookies,*/authMiddleWare.requireAuth,useRoute2)
 app.use('/auth',useRoute3);
-app.use('/products',useRouteProducts);
+app.use('/products',authMiddleWare.requireAuth,useRouteProducts);
 // app.get("/",function(req,res,next){
 //   res.render('./index');
 // });
