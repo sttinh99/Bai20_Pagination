@@ -7,7 +7,7 @@
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
   "dependencies": {
-    "@sendgrid/mail": "^7.2.1",
+    "@sendgrid/mail": "^8.1.6",
     "bcrypt": "^5.0.0",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
